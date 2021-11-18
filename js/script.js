@@ -23,6 +23,7 @@ function validatePassword(){
     } else {
       confirm_password.setCustomValidity('');
     }
+    console.log("password")
 }
       
 password.onchange = validatePassword;
