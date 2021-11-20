@@ -15,34 +15,34 @@
                 <img src="./img/background.svg" alt="background pattern image" class="background">            </div>
         </section>
         <section class="section-2 ">
-            <div class="section-2-content">
+            <div class="section-2-content section-2-content__modified">
                 <div class="header Logo flex">
                     <h1 class="fw-2 fs-1">Sign Up</h1>
                     <img src="./img/LOGO.svg" alt="Logo" class="logo">
                 </div>
                 <div class=" form-container mt-3">
-                    <form action="./profile.html" class="mt-1">
+                    <form class="mt-2" id="submitForm">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" required>
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
                             <span class="floating-label">Email ID</span>
                         </div>
-                        <div class="mt-1 flex form-group_inline">
+                        <div class="mt-2 flex form-group_inline">
                             <div class="form-group">
-                                <input type="text" name="firstName" class="form-control" required>
+                                <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
                                 <span class="floating-label">First Name</span>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="lastName" class="form-control" required>
+                                <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
                                 <span class="floating-label">Last Name</span>
                             </div>
                           
                         </div>
-                        <div class="form-group mt-1 form-group__password">
-                            <input type="password" id="password" name="password" class="form-control password" required>
+                        <div class="form-group mt-2 form-group__password">
+                            <input type="password" id="password" name="password" class="form-control  password" placeholder="Password" required>
                             <span class="floating-label flex">Password <span class="info-container"><img src="./img/info.png" alt="info icon" class="info"></span></span>
-                            <div class="popup">
+                            <div class="popup popup__1">
                                 <ul class="fs-4">
-                                    <li>Your password can’t be too similar to your other personal information.</li>
+                                    <li>Your password can’t be too similar to your email address.</li>
                                     <li>Your password must contain at least 8 characters.</li>
                                     <li>Your password can’t be a commonly used password.</li>
                                     <li>Your password can’t be entirely numeric.</li>
@@ -50,13 +50,28 @@
                                 <div class="polygon"></div>
                             </div>
                         </div>
-                        <div class="form-group mt-1">
-                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+                        <div class="form-group mt-2 form-group__password">
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control password" placeholder="Confirm Password" required>
                             <span class="floating-label">Confirm Password</span>
+                            <div class="popup popup__2">
+                                <p class="fs-3">Enter the same password as before, for verification.</p>
+                            </div>
                         </div>
                 
-                        <div class="submit mt-1">
-                            <input type="Submit" value="Sign Up" class="fw-2">
+                        <!-- <div class="mt-2">
+                            <input type="submit" id="submit" value="Sign Up" class="fw-2">
+                            <button type="submit" id="submit" value="Sign Up" class="fw-2" onClick="myFuction">Sign Up</button>
+                        </div>  -->
+                        <div class="error" id="error">
+                            <!-- <ul>
+                                <li>The password is too similar</li>
+                                <li>The password is too similar</li>
+                                <li>The password is too similar</li>
+                                <li>The password is too similar</li>
+                            </ul> -->
+                        </div>
+                        <div class="submit mt-2">
+                            <input type="Submit" id="submit" value="Sign Up" class="fw-2">
                         </div> 
                     </form>
                     <p class="mt-3"> Already a Member? <a href="./index.html" class="fw-1">Sign In</a></p>
